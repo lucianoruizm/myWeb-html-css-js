@@ -1,0 +1,341 @@
+html {
+    background: linear-gradient(
+        #f5f9fa,
+        #ebf3f5
+   );
+}
+
+* {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+:root {
+    --primary: #d2815c;
+    --secondary: #d2855c;
+    --dark: #060505;
+}
+
+body {
+   text-align: center;
+}
+
+header {
+    background: linear-gradient(
+        #333,
+        #555);
+    overflow: hidden;
+    padding: 5rem 0 3rem;
+    position: relative;
+}
+
+header img {
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    opacity: .2;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: contain;
+}
+
+h2, h2, h4 {
+    letter-spacing: .3rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 4em;
+    margin: 0;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: #fff;
+}
+
+h3 {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+}
+
+span {
+    font-size: 80%;
+}
+
+main {
+    margin-top: 56.3438px;
+
+}
+
+section {
+    padding-bottom: 3em;
+    padding-top: 3em;
+}
+
+hr {
+    background: linear-gradient(to right,
+        transparent,
+        #000,
+        transparent);
+    border: 0;
+    height: .1rem;
+    max-width: 100%;
+}
+
+section hr {
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+#navbar {
+    box-shadow: 0 0 10px;
+    background: linear-gradient(
+        var(--primary),
+        var(--secondary));
+}
+
+#navbar div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar div a {
+    align-items: center;
+    color: #eee;
+    display: flex;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+#navbar div img {
+    width: 40px;
+    margin-right: .5rem;
+}
+
+#navbar .hidden {
+    max-height: 0;
+}
+
+#navbar .drop-down-menu {
+    background: linear-gradient(
+        var(--primary),
+        var(--secondary));
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    transition: max-height .4s ease-in-out;
+    width: 100%;
+}
+
+#navbar .show {
+    max-height: 190px;
+}
+
+#navbar ul a {
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+
+
+.logo-circle {
+    border-radius: 50%;
+}
+
+img {
+    border-style: none;
+    width: 100%;
+}
+
+#skillset img {
+    width: 70%;
+}
+
+section.even0 {
+    color: #000000;
+}
+
+section.even {
+    background: linear-gradient(
+    var(--primary),
+    var(--secondary));
+}
+
+.even h3 {
+    color: #eee;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+#portfolio h4 {
+    bottom: 0;
+    color: #fff;
+    display: block;
+    left: 50%;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    transition: bottom .3s ease, opacity
+    .3s ease;
+    z-index: 2;
+}
+
+#portfolio button {
+    display: block;
+    position: relative;
+    /* margin-top: 1rem;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-left: auto; */
+    margin: 1rem auto;
+    box-shadow: 0 0 10px #666;
+    cursor: zoom-in;
+    /* height: 180px;
+    width: 180px; */
+    max-width: 300px;
+    overflow: hidden;
+    padding: 0;
+}
+
+#portfolio button:before {
+    background-color: var(--primary);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .3s ease;
+    width: 100%;
+    z-index: 1;
+}
+
+#portfolio button:after {
+    content: url("https://w7.pngwing.com/pngs/439/472/png-transparent-magnifying-glass-magnifying-glass-glass-photography-engine.png");
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transform: translate(-40%, -50%);
+    transition: top .3s ease, opacity .3s ease;
+    width: 50%;
+    z-index: 2;
+}
+
+#skillset > div {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1rem;
+}
+
+#skillset > div > div {
+    position: relative;
+}
+
+/* #skillset span .tooltip {
+    color: #fff;
+    background-color: #111;
+    border-radius: .5rem;
+    left: 50%;
+    opacity: 0;
+    padding: .5rem 0;
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    top: -40px;
+    transform: translate(-60px, 10px);
+    transition: opacity .3s
+    ease, transform .3s
+    ease;
+    width: 120px;
+    z-index: 1;
+}
+
+#skillset span:after {
+    border: 5px solid transparent;
+    border-top-color: #222;
+    content: "";
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+    top: 100%;
+} */
+
+label {
+    color: #fff;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+    font-size: 1.2rem;
+}
+
+form label {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+input, input:focus, textarea, textarea:focus {
+    background-color: #8e0e0038;
+    border: none;
+    box-shadow: none;
+    margin: .5rem 0 2rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+form button, input {
+    overflow: visible;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+form button {
+    background-color: #8E0E00;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    margin: 2rem;
+    padding: .6rem;
+    width: 80px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 1.15;
+}
+
+footer {
+    background: linear-gradient(
+        #333,
+        #555);
+    padding: 2rem 0;
+}
+
+footer small {
+    color:#eee;
+    font-size: small;
+}
+
