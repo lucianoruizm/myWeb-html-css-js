@@ -21,24 +21,13 @@ body {
    text-align: center;
 }
 
-header {
-    background: linear-gradient(
-        #333,
-        #555);
-    overflow: hidden;
-    padding: 5rem 0 3rem;
-    position: relative;
+.logo-circle {
+    border-radius: 50%;
 }
 
-header img {
-    left: 50%;
-    min-height: 100%;
-    min-width: 100%;
-    opacity: .2;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    object-fit: contain;
+img {
+    border-style: none;
+    width: 100%;
 }
 
 h2, h2, h4 {
@@ -65,7 +54,7 @@ h3 {
 }
 
 span {
-    font-size: 80%;
+    font-size: 75%;
 }
 
 main {
@@ -88,6 +77,26 @@ hr {
     max-width: 100%;
 }
 
+header {
+    background: linear-gradient(
+        #323333,
+        #2a2b2b);
+    overflow: hidden;
+    padding: 5rem 0 3rem;
+    position: relative;
+}
+
+header img{
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    opacity: .3;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: contain;
+}
+
 section hr {
     margin-top: 1em;
     margin-bottom: 3em;
@@ -107,10 +116,15 @@ section hr {
 
 #navbar div a {
     align-items: center;
-    color: #eee;
+    color: #fff;
     display: flex;
     padding: 1rem;
     text-decoration: none;
+}
+
+#navbar div a:hover {
+    color: #000;
+    transition: color .3s ease,color .3s ease
 }
 
 #navbar div img {
@@ -124,8 +138,8 @@ section hr {
 
 #navbar .drop-down-menu {
     background: linear-gradient(
-        var(--primary),
-        var(--secondary));
+        #333,
+        #000);
     list-style: none;
     margin: 0;
     overflow: hidden;
@@ -145,17 +159,12 @@ section hr {
     font-size: 18px;
     padding: 10px 15px;
     text-decoration: none;
+    transition: color .3s ease,background-color .3s ease
 }
 
-
-
-.logo-circle {
-    border-radius: 50%;
-}
-
-img {
-    border-style: none;
-    width: 100%;
+#navbar ul a:focus,#navbar ul a:hover {
+    background-color: var(--primary);
+    color: #000;
 }
 
 #skillset img {
@@ -224,7 +233,7 @@ h4 {
     z-index: 1;
 }
 
-#portfolio button:after {
+/* #portfolio button:after {
     content: url("https://w7.pngwing.com/pngs/439/472/png-transparent-magnifying-glass-magnifying-glass-glass-photography-engine.png");
     left: 50%;
     opacity: 0;
@@ -234,7 +243,9 @@ h4 {
     transition: top .3s ease, opacity .3s ease;
     width: 50%;
     z-index: 2;
-}
+} */
+
+
 
 #skillset > div {
     display: grid;
@@ -247,9 +258,9 @@ h4 {
     position: relative;
 }
 
-/* #skillset span .tooltip {
+#skillset span {
     color: #fff;
-    background-color: #111;
+    background-color: rgba(0,0,0,.75);
     border-radius: .5rem;
     left: 50%;
     opacity: 0;
@@ -274,7 +285,7 @@ h4 {
     margin-left: -5px;
     position: absolute;
     top: 100%;
-} */
+}
 
 label {
     color: #fff;
